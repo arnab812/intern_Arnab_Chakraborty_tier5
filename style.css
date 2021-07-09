@@ -1,0 +1,209 @@
+/* navbar styling */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    
+}
+.navbar{
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(14, 13, 13);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: rgba(253, 253, 255, 0.952);
+    font-size: 35px;
+    font-weight: 200;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    color: rgb(249, 252, 251);
+}
+.navbar .menu li a{
+    color: rgb(53 232 146);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.total2nd{
+    width: 1300px;
+    background-color: rgb(255, 255, 255);
+}
+.new{
+    width: 116%;
+    font-size: 42px;
+    font-family: sans-serif;
+    padding: 10px 0px 0px 0px;
+}
+/* 
+ .new2{
+    border-color: black;
+    border-radius: 2px;
+    margin-top: -20px;
+    margin-left: 5cm;
+    margin-right: 17cm;
+    background-color: rgba(16, 248, 190, 0.89);
+    text-align: center;
+    font-size: 21px;
+    word-spacing: 0.5cm;
+} */
+.line{
+    padding-left: 1cm;
+    padding-right: 1.5cm;
+    width: 75%;
+    margin: -7px 0px 0px 20%;
+    padding: 6px 0px 6px 0px;
+    font-family: cursive;
+    font-size: 17px;
+    background-color: rgb(4 217 134 / 89%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.top_buttons{
+    list-style: none;
+    display: flex;
+}
+.clm{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/* .new3{
+    border-radius: 2px;
+
+}
+.new3{
+    margin-top: -52px;
+    margin-left: 18.5cm;
+    margin-right: 1cm;
+    background-color: rgba(16, 248, 190, 0.89);
+    text-align: center;
+    font-size: 19px;
+    word-spacing: 0.5cm;
+
+} */
+/* Total 3rd */
+
+.ulname{
+    list-style-type: none;
+}
+.total3rd{
+    height: 17.5rem;
+    width: max-content;
+    background-color: #f2eeee;
+    font-family: sans-serif;
+}
+#Portfolio{
+    margin-left: 1cm;
+    padding-top: 10px;
+}
+#h3{
+    margin-left: 3cm;
+    margin-top: -85px;
+}
+#p1{
+    margin-left: 3cm;
+    margin-top: -10px;
+    font-size: 16px;
+}
+#p3{
+    margin-left: 3cm;
+    margin-top: -85px;
+
+}
+#p2para{
+    margin-left: 3cm;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+#tag2{
+    margin-top: -80px;
+    margin-left: 22cm;
+    margin-right: 5cm;
+}
+#tag3{
+    margin-top: 60px;
+}
+#bleft{
+    margin-left: 3cm;
+    margin-top: -85px;
+
+}
+#bleftpara{
+    margin-left: 3cm;
+    margin-top: -10px;
+}
+#tag4{
+    margin-top: -80px;
+    margin-left: 22cm;
+    margin-right: 5cm;
+}
+#last{
+    margin-left: 3cm;
+    margin-top: -85px;
+}
+#pary{
+    margin-left: 3cm;
+    margin-top: -10px;
+}
+
+/* total 4th */
+.total4th{
+    height: 13rem;
+    background-color: rgb(4 217 134 / 89%);;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    word-spacing: 0.25cm;
+    font-family: -webkit-pictograph;
+}
+}
+/* .text{
+    padding-top: 20px;
+} */
+/* total 5th */
+/* .total5th{
+    margin-top: -20px;
+    background-color: rgb(146, 106, 106);
+    height: 11rem;
+} */
+
+
+#aboutus{
+    list-style: none;
+    padding-top: 20px;
+}
+.getin{
+    margin-top: -150px;
+    margin-left: 25cm;
+    list-style: none;
+}
+.tag1{
+    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0,7); 
+}
+#CUCK{
+    background-color: rgb(4 217 134 / 89%);
+    text-align: center;
+    width: 18%;
+    padding: 5px 0px 5px 0px;
+    border-radius: 2px;
+}
+.total6th{
+    margin-top: -20px;
+    background-color: white;
+    text-align: center;
+}
+
+.total5th_ul{
+    list-style: none;
+}
