@@ -1,33 +1,50 @@
-document.querySelector('#push').onclick = function(){
-    if(document.querySelector('#newtask input').value.length == 0){
-        alert("Please Enter a Task")
+var list = [];
+var inp = document.getElementById("myInput");
+var students_name = document.getElementById("studentsName");
+
+function getInputValue() {
+    if (inp.value === "") {
+        alert("Please Enter the student name before you submit");
     }
-    else{
-        document.querySelector('#tasks').innerHTML += `
-            <div class="task">
-                <span id="taskname">
-                    ${document.querySelector('#newtask input').value}
-                </span>
-                <button class="delete">
-                    <i class="far fa-trash-alt"></i>
-                </button>
-            </div>
-        `;
-
-        var current_tasks = document.querySelectorAll(".delete");
-        for(var i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
-                this.parentNode.remove();
-            }
+    else {
+		if (inp.value.length>=26){
+			alert("Enter Name within 25 characters")
+			inp.focus()
+			return false
+		}
+        if (checkDuplicate(inp.value) === "present") {
+            alert("The name is already present")
         }
-
-        var tasks = document.querySelectorAll(".task");
-        for(var i=0; i<tasks.length; i++){
-            tasks[i].onclick = function(){
-                this.classList.toggle('completed');
-            }
+        else {
+            var val=capitalizeFirstLetter(inp.value);
+            list.push(val);
+            inp.value = "";
+            showList();
         }
-
-        document.querySelector("#newtask input").value = "";
     }
 }
+
+function capitalizeFirstLetter(val) {
+    return val.charAt(0).toUpperCase() + val.slice(1);
+  }
+
+function checkDuplicate(inpVal) {
+    for (var i = 0; i < list.length; i++) {
+        if (inpVal.toLowerCase() === list[i].toLowerCase()) {
+            return "present";
+        }
+    }
+}
+
+function showList() {
+    studentsName.innerHTML = "";
+    list.forEach(function (n, i) {
+        students_name.innerHTML += `<li> ${n} <span ><button class="btn1" onclick='deleteItem("${i}")'; type="submit">Delete</button></li>`;
+
+    })
+}
+
+function deleteItem(i) {
+    list.splice(i, 1);
+    showList();
+} 
