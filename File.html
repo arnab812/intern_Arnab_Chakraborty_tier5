@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Simple To Do List</title>
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <!--Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="File.css">
-</head>
-<body>
-    <div class="main">
-     <h1>Students Name :</h1>
-    </div> 
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="Enter Your Name">
-            <button id="push">Submit</button>
-        </div>
-        <div id="tasks"> <h2>Students List-</h2></div>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Students' Database</title>
+</head>
+
+<body>
+    <header>TIER5 INTERNSHIP TASK</header>
+    <div class="mainDiv">
+        
+        <div class="nextDiv">
+            <p>Enter Student Name :</p>
+            <input type="text" placeholder="Enter Your Full Name" id="myInput">
+            <button class="btn" type="submit" onclick="getInputValue()">SUBMIT</button>
+        </div>
+        <p id="secondayPara">Student Name List:</p>
+        <ol id="studentsName">
+        </ol>
     </div>
-    <!--Script-->
-    <script src="File.JS"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+
+</html> 
