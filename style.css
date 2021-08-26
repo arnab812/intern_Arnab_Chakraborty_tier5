@@ -1,0 +1,22 @@
+button {
+    background-color: aqua;
+    color: #000000;
+}
+#search {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#print {
+    margin-top: 10px;
+    margin-left: 18px;
+}
+#task {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color:blue;
+}
+#task1 {
+    color: rgb(244, 255, 92);
+    background-color:rgb(15, 15, 226);
+    text-align: center;
+}
